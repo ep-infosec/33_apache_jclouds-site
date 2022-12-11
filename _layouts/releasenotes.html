@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        {% include navbar.html %}
+        <div class="container">
+            <div class="page-header">
+                <h1>{{ page.title }}</h1>
+                {% if page.date %}
+                    <span class="text-muted">{{ page.date | date_to_long_string }}</span>
+                {% endif %}
+            </div>
+            {{ content }}
+            <div class="row clearfix">
+                <div id="footer" class="col-md-12 column">
+                    {% include footer.html %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

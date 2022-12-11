@@ -1,0 +1,530 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:hpcloud-objectstorage:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds HP Cloud Object Storage 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ hpcloud-objectstorage ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ hpcloud-objectstorage ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ hpcloud-objectstorage ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ hpcloud-objectstorage ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ hpcloud-objectstorage ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ hpcloud-objectstorage ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ hpcloud-objectstorage ---
+[INFO] Compiling 26 source files to /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ hpcloud-objectstorage ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/src/test/clojure
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ hpcloud-objectstorage ---
+[INFO] Compiling 15 source files to /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ hpcloud-objectstorage ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@52b2a2d8
+Starting test testSignGetBlob(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobRequestSignerTest)
+Starting test testSignPutBlob(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobRequestSignerTest)
+Starting test testSignRemoveBlob(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobRequestSignerTest)
+[pool-2-thread-1] Test testSignGetBlob(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobRequestSignerTest) succeeded: 1983ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testSignRemoveBlob(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobRequestSignerTest) succeeded: 1989ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testSignPutBlob(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobRequestSignerTest) succeeded: 2001ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListObjectsWhenResponseIs2xx(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobStoreExpectTest)
+[pool-3-thread-1] Test testListObjectsWhenResponseIs2xx(org.jclouds.hpcloud.objectstorage.blobstore.HPCloudObjectStorageBlobStoreExpectTest) succeeded: 120ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest)
+Starting test testTransformableToContains(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest)
+Starting test testOfApiContains(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest)
+Starting test testWithId(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest)
+[pool-4-thread-1] Test testAllContains(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest) succeeded: 5ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testOfApiContains(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest) succeeded: 7ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testTransformableToContains(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest) succeeded: 8ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testWithId(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageProviderTest) succeeded: 6ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test test(org.jclouds.hpcloud.objectstorage.parse.CDNContainersTest)
+[pool-5-thread-1] Test test(org.jclouds.hpcloud.objectstorage.parse.CDNContainersTest) succeeded: 26ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.684 sec
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ hpcloud-objectstorage ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ hpcloud-objectstorage ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target/hpcloud-objectstorage-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ hpcloud-objectstorage ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@99b5393
+*** containers to test: [adriancole-blobstore0, adriancole-blobstore1, adriancole-blobstore2, adriancole-blobstore3, adriancole-blobstore4, adriancole-blobstore5, adriancole-blobstore6, adriancole-blobstore7, adriancole-blobstore8, adriancole-blobstore9]
+Starting test deleteContainerIfEmptyNotFound(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+Starting test testPublicAccess(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerLiveTest)
+*** allocated new container adriancole-blobstore0...
+[TestNG] Test deleteContainerIfEmptyNotFound(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 1062ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCopyObjectOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+*** allocated new container adriancole-blobstore0-192028121280950392...
+[TestNG] Test testCopyObjectOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 7081ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testHeadAccountMetadata(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+[TestNG] Test testPublicAccess(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 0.
+Starting test testCreateBlobWithExpiry(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testHeadAccountMetadata(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 3429ms
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 0.
+Starting test testListContainerPath(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+[TestNG] Test testCreateBlobWithExpiry(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 3, failed: 2, skipped: 0.
+Starting test testGetIfModifiedSince(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testListContainerPath(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 2883ms
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 0.
+Starting test testListOwnedContainers(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+[TestNG] Test testGetIfModifiedSince(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 7035ms
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 0.
+Starting test testPutFileParallel(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testListOwnedContainers(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 5340ms
+Test suite progress: tests succeeded: 6, failed: 2, skipped: 0.
+Starting test testObjectOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+[TestNG] Test testObjectOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 18771ms
+Test suite progress: tests succeeded: 7, failed: 2, skipped: 0.
+Starting test testPutContainers(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+[TestNG] Test testPutContainers(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) succeeded: 6368ms
+Test suite progress: tests succeeded: 8, failed: 2, skipped: 0.
+Starting test testCDNOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest)
+[TestNG] Test testPutFileParallel(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 31658ms
+Test suite progress: tests succeeded: 9, failed: 2, skipped: 0.
+Starting test deleteObjectNoContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObjectNoContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 421ms
+Test suite progress: tests succeeded: 10, failed: 2, skipped: 0.
+Starting test testGetIfNoneMatch(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+*** allocated new container adriancole-blobstore4...
+*** allocated new container adriancole-blobstore5...
+[TestNG] Test testGetIfNoneMatch(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 5524ms
+Test suite progress: tests succeeded: 11, failed: 2, skipped: 0.
+Starting test testMultipartChunkedFileStream(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testCDNOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest) failed.
+Test suite progress: tests succeeded: 11, failed: 3, skipped: 0.
+unable to delete container adriancole-blobstore5, ignoring...
+java.lang.reflect.UndeclaredThrowableException
+	at $Proxy80.containerExists(Unknown Source)
+	at org.jclouds.openstack.swift.blobstore.SwiftBlobStore.deleteAndVerifyContainerGone(SwiftBlobStore.java:236)
+	at org.jclouds.blobstore.internal.BaseBlobStore$1.get(BaseBlobStore.java:203)
+	at org.jclouds.blobstore.internal.BaseBlobStore$1.get(BaseBlobStore.java:199)
+	at org.jclouds.util.Assertions.eventuallyTrue(Assertions.java:33)
+	at org.jclouds.blobstore.internal.BaseBlobStore.clearAndDeleteContainer(BaseBlobStore.java:199)
+	at org.jclouds.blobstore.internal.BaseBlobStore.deleteContainer(BaseBlobStore.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.google.inject.internal.DelegatingInvocationHandler.invoke(DelegatingInvocationHandler.java:37)
+	at $Proxy84.deleteContainer(Unknown Source)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.deleteContainerOrWarnIfUnable(BaseBlobStoreIntegrationTest.java:171)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.access$1100(BaseBlobStoreIntegrationTest.java:66)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest$11.run(BaseBlobStoreIntegrationTest.java:496)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1024)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1303)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
+	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	... 22 more
+Exception in thread "user thread 1" java.lang.IllegalStateException: interrupted calling get() on [[method=HPCloudObjectStorageAsyncApi.containerExists, request=HEAD https://region-a.geo-1.objects.hpcloudsvc.com/v1.0/AUTH_651c939f-04f0-4fbf-bd50-27f114ccaa15/adriancole-blobstore5 HTTP/1.1]], so could not run listeners
+	at org.jclouds.concurrent.Futures$CallGetAndRunExecutionList.run(Futures.java:66)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:979)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:218)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at org.jclouds.concurrent.config.DescribedFuture.get(DescribedFuture.java:45)
+	at org.jclouds.concurrent.Futures$CallGetAndRunExecutionList.run(Futures.java:59)
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: task submitted from the following trace
+	at org.jclouds.concurrent.config.DescribedFuture.ensureCauseHasSubmissionTrace(DescribedFuture.java:78)
+	at org.jclouds.concurrent.config.DescribedFuture.get(DescribedFuture.java:49)
+	... 4 more
+[TestNG] Test testMultipartChunkedFileStream(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 7519ms
+Test suite progress: tests succeeded: 12, failed: 3, skipped: 0.
+Starting test blobNotFound(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test blobNotFound(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 3746ms
+Test suite progress: tests succeeded: 13, failed: 3, skipped: 0.
+Starting test testBigFileGets(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testBigFileGets(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 27814ms
+Test suite progress: tests succeeded: 14, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2427ms
+Test suite progress: tests succeeded: 15, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 3380ms
+Test suite progress: tests succeeded: 16, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 4016ms
+Test suite progress: tests succeeded: 17, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2413ms
+Test suite progress: tests succeeded: 18, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 5954ms
+Test suite progress: tests succeeded: 19, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2098ms
+Test suite progress: tests succeeded: 20, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2281ms
+Test suite progress: tests succeeded: 21, failed: 3, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 21, failed: 4, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 21, failed: 5, skipped: 0.
+Starting test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 4098ms
+Test suite progress: tests succeeded: 22, failed: 5, skipped: 0.
+Starting test testGetIfMatch(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testGetIfMatch(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 4133ms
+Test suite progress: tests succeeded: 23, failed: 5, skipped: 0.
+Starting test testMetadata(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testMetadata(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 5887ms
+Test suite progress: tests succeeded: 24, failed: 5, skipped: 0.
+Starting test testPutObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2449ms
+Test suite progress: tests succeeded: 25, failed: 5, skipped: 0.
+Starting test testPutObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2776ms
+Test suite progress: tests succeeded: 26, failed: 5, skipped: 0.
+Starting test testPutObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2312ms
+Test suite progress: tests succeeded: 27, failed: 5, skipped: 0.
+Starting test testGetIfUnmodifiedSince(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testGetIfUnmodifiedSince(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 4139ms
+Test suite progress: tests succeeded: 28, failed: 5, skipped: 0.
+Starting test deleteObjectNotFound(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObjectNotFound(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 1509ms
+Test suite progress: tests succeeded: 29, failed: 5, skipped: 0.
+Starting test testGetRange(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testGetRange(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 3484ms
+Test suite progress: tests succeeded: 30, failed: 5, skipped: 0.
+Starting test testPutObjectStream(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObjectStream(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest) succeeded: 2514ms
+Test suite progress: tests succeeded: 31, failed: 5, skipped: 0.
+Starting test testSignRemoveUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest)
+[TestNG] Test testSignRemoveUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest) succeeded: 3122ms
+Test suite progress: tests succeeded: 32, failed: 5, skipped: 0.
+Starting test testSignGetUrlWithTime(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest)
+[TestNG] Test testSignGetUrlWithTime(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 32, failed: 5, skipped: 1.
+Starting test testSignGetUrlOptions(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest)
+[TestNG] Test testSignGetUrlOptions(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest) succeeded: 2554ms
+Test suite progress: tests succeeded: 33, failed: 5, skipped: 1.
+Starting test testSignPutUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest)
+[TestNG] Test testSignPutUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest) succeeded: 2446ms
+Test suite progress: tests succeeded: 34, failed: 5, skipped: 1.
+Starting test testSignPutUrlWithTime(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest)
+[TestNG] Test testSignPutUrlWithTime(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 34, failed: 5, skipped: 2.
+Starting test testSignGetUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest)
+[TestNG] Test testSignGetUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobSignerLiveTest) succeeded: 2370ms
+Test suite progress: tests succeeded: 35, failed: 5, skipped: 2.
+Starting test testValues(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testValues(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 9210ms
+Test suite progress: tests succeeded: 36, failed: 5, skipped: 2.
+Starting test testDirectory(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 44990ms
+Test suite progress: tests succeeded: 37, failed: 5, skipped: 2.
+Starting test testPutMoreThanSingleListing(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 14240ms
+Test suite progress: tests succeeded: 38, failed: 5, skipped: 2.
+Starting test testContainsKey(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 2471ms
+Test suite progress: tests succeeded: 39, failed: 5, skipped: 2.
+Starting test testListContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 5373ms
+Test suite progress: tests succeeded: 40, failed: 5, skipped: 2.
+Starting test testPut(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 8798ms
+Test suite progress: tests succeeded: 41, failed: 5, skipped: 2.
+Starting test testEntrySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 16229ms
+Test suite progress: tests succeeded: 42, failed: 5, skipped: 2.
+Starting test testKeySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 3431ms
+Test suite progress: tests succeeded: 43, failed: 5, skipped: 2.
+Starting test testContains(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testContains(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 2971ms
+Test suite progress: tests succeeded: 44, failed: 5, skipped: 2.
+Starting test testPutAll(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 3745ms
+Test suite progress: tests succeeded: 45, failed: 5, skipped: 2.
+Starting test testIsEmpty(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 3452ms
+Test suite progress: tests succeeded: 46, failed: 5, skipped: 2.
+Starting test testClear(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testClear(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 5740ms
+Test suite progress: tests succeeded: 47, failed: 5, skipped: 2.
+Starting test testRemove(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testRemove(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobMapIntegrationLiveTest) succeeded: 4166ms
+Test suite progress: tests succeeded: 48, failed: 5, skipped: 2.
+Starting test containerExists(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test containerExists(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 2337ms
+Test suite progress: tests succeeded: 49, failed: 5, skipped: 2.
+Starting test testCreateDeleteContainerMetadata(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testCreateDeleteContainerMetadata(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 4118ms
+Test suite progress: tests succeeded: 50, failed: 5, skipped: 2.
+Starting test deleteContainerIfEmpty(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+*** allocated new container adriancole-blobstore9...
+[TestNG] Test deleteContainerIfEmpty(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 4129ms
+Test suite progress: tests succeeded: 51, failed: 5, skipped: 2.
+Starting test deleteContainerWithContents(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+*** allocated new container adriancole-blobstore6...
+[TestNG] Test deleteContainerWithContents(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 5229ms
+Test suite progress: tests succeeded: 52, failed: 5, skipped: 2.
+Starting test testDirectory(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 27931ms
+Test suite progress: tests succeeded: 53, failed: 5, skipped: 2.
+Starting test testClearWhenContentsUnderPath(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testClearWhenContentsUnderPath(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 12577ms
+Test suite progress: tests succeeded: 54, failed: 5, skipped: 2.
+Starting test testListContainerPrefix(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testListContainerPrefix(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 18712ms
+Test suite progress: tests succeeded: 55, failed: 5, skipped: 2.
+Starting test containerDoesntExist(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 949ms
+Test suite progress: tests succeeded: 56, failed: 5, skipped: 2.
+Starting test testWithDetails(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testWithDetails(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 3417ms
+Test suite progress: tests succeeded: 57, failed: 5, skipped: 2.
+Starting test testListContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 10402ms
+Test suite progress: tests succeeded: 58, failed: 5, skipped: 2.
+Starting test testListContainerMarker(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testListContainerMarker(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 18676ms
+Test suite progress: tests succeeded: 59, failed: 5, skipped: 2.
+Starting test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 3331ms
+Test suite progress: tests succeeded: 60, failed: 5, skipped: 2.
+Starting test testListContainerMaxResults(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testListContainerMaxResults(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 17863ms
+Test suite progress: tests succeeded: 61, failed: 5, skipped: 2.
+Starting test testListRootUsesDelimiter(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testListRootUsesDelimiter(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 18502ms
+Test suite progress: tests succeeded: 62, failed: 5, skipped: 2.
+Starting test testSetGetContainerMetadata(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest)
+[TestNG] Test testSetGetContainerMetadata(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerIntegrationLiveTest) succeeded: 3261ms
+Test suite progress: tests succeeded: 63, failed: 5, skipped: 2.
+Starting test testCopyUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobLiveTest)
+[TestNG] Test testCopyUrl(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobLiveTest) succeeded: 6161ms
+Test suite progress: tests succeeded: 64, failed: 5, skipped: 2.
+Starting test testDirectory(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 39490ms
+Test suite progress: tests succeeded: 65, failed: 5, skipped: 2.
+Starting test testPutFile(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutFile(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 8967ms
+Test suite progress: tests succeeded: 66, failed: 5, skipped: 2.
+Starting test testContainsKey(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 2595ms
+Test suite progress: tests succeeded: 67, failed: 5, skipped: 2.
+Starting test testRemove(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testRemove(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 5470ms
+Test suite progress: tests succeeded: 68, failed: 5, skipped: 2.
+Starting test testListContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 1159ms
+Test suite progress: tests succeeded: 69, failed: 5, skipped: 2.
+Starting test testValues(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testValues(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 2640ms
+Test suite progress: tests succeeded: 70, failed: 5, skipped: 2.
+Starting test testPutAllBytes(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAllBytes(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3827ms
+Test suite progress: tests succeeded: 71, failed: 5, skipped: 2.
+Starting test testPutAllFiles(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAllFiles(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 4689ms
+Test suite progress: tests succeeded: 72, failed: 5, skipped: 2.
+Starting test testEntrySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 13918ms
+Test suite progress: tests succeeded: 73, failed: 5, skipped: 2.
+Starting test testKeySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3635ms
+Test suite progress: tests succeeded: 74, failed: 5, skipped: 2.
+Starting test testContainsBytesValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsBytesValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 2153ms
+Test suite progress: tests succeeded: 75, failed: 5, skipped: 2.
+Starting test testPutAll(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 4314ms
+Test suite progress: tests succeeded: 76, failed: 5, skipped: 2.
+Starting test testPutString(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutString(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 5856ms
+Test suite progress: tests succeeded: 77, failed: 5, skipped: 2.
+Starting test testIsEmpty(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3155ms
+Test suite progress: tests succeeded: 78, failed: 5, skipped: 2.
+Starting test testContainsStringValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsStringValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3626ms
+Test suite progress: tests succeeded: 79, failed: 5, skipped: 2.
+Starting test testClear(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testClear(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3788ms
+Test suite progress: tests succeeded: 80, failed: 5, skipped: 2.
+Starting test testPutAllStrings(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAllStrings(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3949ms
+Test suite progress: tests succeeded: 81, failed: 5, skipped: 2.
+Starting test testPutBytes(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutBytes(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 5002ms
+Test suite progress: tests succeeded: 82, failed: 5, skipped: 2.
+Starting test testContainsFileValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsFileValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 3640ms
+Test suite progress: tests succeeded: 83, failed: 5, skipped: 2.
+Starting test testPutMoreThanSingleListing(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 12693ms
+Test suite progress: tests succeeded: 84, failed: 5, skipped: 2.
+Starting test testPut(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 4567ms
+Test suite progress: tests succeeded: 85, failed: 5, skipped: 2.
+Starting test testContainsInputStreamValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsInputStreamValue(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageInputStreamMapIntegrationLiveTest) succeeded: 2795ms
+Test suite progress: tests succeeded: 86, failed: 5, skipped: 2.
+Starting test testGetAssignableLocations(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageServiceIntegrationLiveTest)
+location {scope=REGION, id=region-a.geo-1, description=region-a.geo-1, parent=hpcloud-objectstorage}
+[TestNG] Test testGetAssignableLocations(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageServiceIntegrationLiveTest) succeeded: 334ms
+Test suite progress: tests succeeded: 87, failed: 5, skipped: 2.
+Starting test testAllLocations(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageServiceIntegrationLiveTest)
+*** allocated new container adriancole-blobstore7...
+ >> creating container in location {scope=REGION, id=region-a.geo-1, description=region-a.geo-1, parent=hpcloud-objectstorage}
+ << call complete.. checking
+*** allocated new container adriancole-blobstore75810323238033687819...
+[TestNG] Test testAllLocations(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageServiceIntegrationLiveTest) succeeded: 3170ms
+Test suite progress: tests succeeded: 88, failed: 5, skipped: 2.
+Starting test containerDoesntExist(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageServiceIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageServiceIntegrationLiveTest) succeeded: 341ms
+Test suite progress: tests succeeded: 89, failed: 5, skipped: 2.
+unable to delete container adriancole-blobstore75810323238033687819, ignoring...
+java.lang.reflect.UndeclaredThrowableException
+	at $Proxy80.containerExists(Unknown Source)
+	at org.jclouds.openstack.swift.blobstore.SwiftBlobStore.deleteAndVerifyContainerGone(SwiftBlobStore.java:236)
+	at org.jclouds.blobstore.internal.BaseBlobStore$1.get(BaseBlobStore.java:203)
+	at org.jclouds.blobstore.internal.BaseBlobStore$1.get(BaseBlobStore.java:199)
+	at org.jclouds.util.Assertions.eventuallyTrue(Assertions.java:33)
+	at org.jclouds.blobstore.internal.BaseBlobStore.clearAndDeleteContainer(BaseBlobStore.java:199)
+	at org.jclouds.blobstore.internal.BaseBlobStore.deleteContainer(BaseBlobStore.java:194)
+	at sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.google.inject.internal.DelegatingInvocationHandler.invoke(DelegatingInvocationHandler.java:37)
+	at $Proxy84.deleteContainer(Unknown Source)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.deleteContainerOrWarnIfUnable(BaseBlobStoreIntegrationTest.java:171)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.access$1100(BaseBlobStoreIntegrationTest.java:66)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest$11.run(BaseBlobStoreIntegrationTest.java:496)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1024)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1303)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
+	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	... 21 more
+Exception in thread "user thread 1" java.lang.IllegalStateException: interrupted calling get() on [[method=HPCloudObjectStorageAsyncApi.containerExists, request=HEAD https://region-a.geo-1.objects.hpcloudsvc.com/v1.0/AUTH_651c939f-04f0-4fbf-bd50-27f114ccaa15/adriancole-blobstore75810323238033687819 HTTP/1.1]], so could not run listeners
+	at org.jclouds.concurrent.Futures$CallGetAndRunExecutionList.run(Futures.java:66)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:979)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:218)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at org.jclouds.concurrent.config.DescribedFuture.get(DescribedFuture.java:45)
+	at org.jclouds.concurrent.Futures$CallGetAndRunExecutionList.run(Futures.java:59)
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: task submitted from the following trace
+	at org.jclouds.concurrent.config.DescribedFuture.ensureCauseHasSubmissionTrace(DescribedFuture.java:78)
+	at org.jclouds.concurrent.config.DescribedFuture.get(DescribedFuture.java:49)
+	... 4 more
+[TestNG] Test testPublicAccessInNonDefaultLocation(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 89, failed: 5, skipped: 3.
+[TestNG] Test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 89, failed: 5, skipped: 4.
+Tests run: 98, Failures: 5, Errors: 0, Skipped: 4, Time elapsed: 643.504 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testPublicAccess(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageContainerLiveTest): hfa06d481403bf71e95f76b963f46163b.cdn.hpcloudsvc.com connecting to GET http://hfa06d481403bf71e95f76b963f46163b.cdn.hpcloudsvc.com/hello HTTP/1.1
+  testCreateBlobWithExpiry(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest): expires=null; expected=Sun Sep 16 19:32:24 PDT 2012
+  testCDNOperations(org.jclouds.hpcloud.objectstorage.HPCloudObjectStorageClientLiveTest): expected:<true> but was:<false>
+  deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest): command: PUT https://region-a.geo-1.objects.hpcloudsvc.com/v1.0/AUTH_651c939f-04f0-4fbf-bd50-27f114ccaa15/adriancole-blobstore7/%7Bgreat%3Cr%7D HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Object/Container name contains forbidden chars from "<>]
+  deleteObject(org.jclouds.hpcloud.objectstorage.blobstore.integration.HPCloudObjectStorageBlobIntegrationLiveTest): command: PUT https://region-a.geo-1.objects.hpcloudsvc.com/v1.0/AUTH_651c939f-04f0-4fbf-bd50-27f114ccaa15/adriancole-blobstore8/lesst%3Een HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Object/Container name contains forbidden chars from "<>]
+
+Tests run: 98, Failures: 5, Errors: 0, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11:16.466s
+[INFO] Finished at: Sun Sep 16 19:41:12 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project hpcloud-objectstorage: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/providers/hpcloud-objectstorage/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

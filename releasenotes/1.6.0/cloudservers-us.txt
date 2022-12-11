@@ -1,0 +1,103 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:cloudservers-us:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/home/zack/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /home/zack/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds CloudServers US provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/api/cloudservers/1.6.0-SNAPSHOT/maven-metadata.xml
+[INFO] 
+[INFO] --- maven-clean-plugin:2.3:clean (default-clean) @ cloudservers-us ---
+[INFO] Deleting file set: /home/zack/jclouds/providers/cloudservers-us/target (included: [**], excluded: [])
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ cloudservers-us ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ cloudservers-us ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ cloudservers-us ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ cloudservers-us ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cloudservers-us ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/zack/jclouds/providers/cloudservers-us/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ cloudservers-us ---
+[INFO] Compiling 1 source file to /home/zack/jclouds/providers/cloudservers-us/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cloudservers-us ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/zack/jclouds/providers/cloudservers-us/src/test/clojure
+[INFO] skip non existing resourceDirectory /home/zack/jclouds/providers/cloudservers-us/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ cloudservers-us ---
+[INFO] Compiling 4 source files to /home/zack/jclouds/providers/cloudservers-us/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cloudservers-us ---
+[INFO] Surefire report directory: /home/zack/jclouds/providers/cloudservers-us/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@626664fc
+Starting test testOfApiContains(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest)
+Starting test testWithId(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest)
+Starting test testAllContains(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest)
+Starting test testTransformableToContains(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest) succeeded: 48ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithId(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest) succeeded: 57ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest) succeeded: 59ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.rackspace.cloudservers.CloudServersUSProviderTest) succeeded: 63ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.071 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cloudservers-us ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ cloudservers-us ---
+[INFO] Building jar: /home/zack/jclouds/providers/cloudservers-us/target/cloudservers-us-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ cloudservers-us ---
+[INFO] Surefire report directory: /home/zack/jclouds/providers/cloudservers-us/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@755688aa
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.897s
+[INFO] Finished at: Mon Apr 29 23:06:54 UTC 2013
+[INFO] Final Memory: 24M/194M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project cloudservers-us: Execution integration of goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ? -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

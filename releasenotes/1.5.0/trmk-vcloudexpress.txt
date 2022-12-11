@@ -1,0 +1,228 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:trmk-vcloudexpress:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Terremark vCloud Express provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ trmk-vcloudexpress ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ trmk-vcloudexpress ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ trmk-vcloudexpress ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ trmk-vcloudexpress ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ trmk-vcloudexpress ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ trmk-vcloudexpress ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ trmk-vcloudexpress ---
+[INFO] Compiling 8 source files to /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ trmk-vcloudexpress ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/src/test/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ trmk-vcloudexpress ---
+[INFO] Compiling 6 source files to /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ trmk-vcloudexpress ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@74b2002f
+Starting test testAddInternetService(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testAddInternetService(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 123ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testAddInternetServiceOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testAddInternetServiceOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testAddInternetServiceToExistingIp(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testAddInternetServiceToExistingIp(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAddInternetServiceToExistingIpOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testAddInternetServiceToExistingIpOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testAddNode(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testAddNode(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 16ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testAddNodeOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testAddNodeOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testCatalog(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testCatalog(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testCatalogItemURI(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testCatalogItemURI(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testConfigureNodeNoDescription(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testConfigureNodeNoDescription(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 77ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testConfigureNodeWithDescription(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testConfigureNodeWithDescription(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testDelete(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testDelete(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testDeleteInternetService(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testDeleteInternetService(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testDeleteKeyPair(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testDeleteKeyPair(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testDeleteNode(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testDeleteNode(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testFindCatalogItemInOrgCatalogNamed(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testFindCatalogItemInOrgCatalogNamed(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testGetAllInternetServices(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetAllInternetServices(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testGetCustomizationOptionsOfCatalogItem(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetCustomizationOptionsOfCatalogItem(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetInternetService(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetInternetService(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testGetKeyPair(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetKeyPair(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testGetKeyPairInOrg(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetKeyPairInOrg(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 12ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testGetNode(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetNode(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testGetNodes(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetNodes(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testGetVDC(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testGetVDC(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testInstantiateVAppTemplateInVDCURI(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testInstantiateVAppTemplateInVDCURI(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 28ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testInstantiateVAppTemplateInVDCURIOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testInstantiateVAppTemplateInVDCURIOptions(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testListKeyPairsInOrg(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testListKeyPairsInOrg(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testListKeyPairsInOrgNotFound(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testListKeyPairsInOrgNotFound(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testListKeyPairsInOrgNull(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testListKeyPairsInOrgNull(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListOrgs(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest)
+[pool-2-thread-1] Test testListOrgs(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest)
+[pool-3-thread-1] Test testAllContains(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest) succeeded: 3ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest)
+Starting test testTransformableToContains(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest)
+Starting test testWithId(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest)
+[pool-3-thread-4] Test testWithId(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testTransformableToContains(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testOfApiContains(org.jclouds.trmk.vcloudexpress.TerremarkVCloudExpressProviderTest) succeeded: 6ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.026 sec
+
+Results :
+
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ trmk-vcloudexpress ---
+[WARNING] Bundle org.jclouds.provider:trmk-vcloudexpress:bundle:1.6.0-SNAPSHOT : Instructions in Export-Package that are never used: org\.jclouds\.trmk\.ecloud.*
+Classpath: Jar:.,Jar:trmk-common,Jar:jclouds-compute,Jar:java-xmlbuilder,Jar:oauth,Jar:aopalliance,Jar:jersey-core,Jar:guice-assistedinject,Jar:guice,Jar:rocoto,Jar:javax.inject,Jar:jsr250-api,Jar:gson,Jar:guava,Jar:jclouds-scriptbuilder,Jar:jclouds-core,Jar:clojure,Jar:tools.logging,Jar:core.incubator
+
+[WARNING] Bundle org.jclouds.provider:trmk-vcloudexpress:bundle:1.6.0-SNAPSHOT : Superfluous export-package instructions: [org.jclouds.trmk.ecloud*]
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ trmk-vcloudexpress ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/target/trmk-vcloudexpress-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ trmk-vcloudexpress ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/trmk-vcloudexpress/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@7e80fa6f
+Starting test testCompareSizes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+Sep 17, 2012 2:15:23 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=cpu=1,ram=512,disk=10, providerId=cpu=1,ram=512,disk=10, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=10.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=ALWAYS_TRUE}
+Sep 17, 2012 2:15:23 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=cpu=8,ram=512,disk=10, providerId=cpu=8,ram=512,disk=10, processors=[{cores=8.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=10.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=ALWAYS_TRUE}
+Sep 17, 2012 2:15:23 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=cpu=8,ram=16384,disk=10, providerId=cpu=8,ram=16384,disk=10, processors=[{cores=8.0, speed=1.0}], ram=16384, volumes=[{type=LOCAL, size=10.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=ALWAYS_TRUE}
+[TestNG] Test testCompareSizes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 7124ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 1229ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+Sep 17, 2012 2:15:25 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/vdc/32, description=Miami Environment 1, parent=https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/org/48}
+[TestNG] Test testGetAssignableLocations(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testImageById(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 0.
+Starting test testImagesCache(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 0.
+Starting test testListSizes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 0.
+Starting test setServiceDefaults(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 6, failed: 2, skipped: 0.
+Starting test testDestroyNodes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testDestroyNodes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 14076ms
+Test suite progress: tests succeeded: 7, failed: 2, skipped: 0.
+Starting test testListImages(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 5375ms
+Test suite progress: tests succeeded: 8, failed: 2, skipped: 0.
+Starting test testListNodes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+{id=https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/vapp/472690, providerId=https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/vapp/472690, name=vcx-block-1313, location={scope=ZONE, id=https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/vdc/32, description=Miami Environment 1, parent=https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/org/48}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=4.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://services.vcloudexpress.terremark.com/api/v0.8a-ext1.6/vapp/472690)}
+[TestNG] Test testListNodes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 6198ms
+Test suite progress: tests succeeded: 9, failed: 2, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testCreateAndRunAService(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 9, failed: 3, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) succeeded: 1401ms
+Test suite progress: tests succeeded: 10, failed: 3, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 10, failed: 4, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.trmk.vcloudexpress.compute.TerremarkVCloudExpressComputeServiceLiveTest)

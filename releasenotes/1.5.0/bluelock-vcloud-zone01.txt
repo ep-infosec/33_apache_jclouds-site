@@ -1,0 +1,542 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:bluelock-vcloud-zone01:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Bluelock vCloud Zone01 provider 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ bluelock-vcloud-zone01 ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ bluelock-vcloud-zone01 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ bluelock-vcloud-zone01 ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ bluelock-vcloud-zone01 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/src/test/clojure
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ bluelock-vcloud-zone01 ---
+[INFO] Compiling 11 source files to /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ bluelock-vcloud-zone01 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4139eeda
+Starting test testAllContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+Starting test testWithId(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+Starting test testOfApiContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+Starting test testTransformableToContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 37ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testAllContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 44ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 20ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.036 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ bluelock-vcloud-zone01 ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target/bluelock-vcloud-zone01-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ bluelock-vcloud-zone01 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@33c282a1
+Starting test testGetVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppClientLiveTest)
+Starting test testListOrgs(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01OrgClientLiveTest)
+Starting test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+Starting test testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest)
+Starting test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testGetVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppClientLiveTest) succeeded: 6557ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCaptureVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+[TestNG] Test testListOrgs(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01OrgClientLiveTest) succeeded: 7925ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)
+[TestNG] Test testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 0.
+Starting test testGetCatalog(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest)
+[TestNG] Test testGetCatalog(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest) succeeded: 5430ms
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 0.
+Sep 16, 2012 9:38:28 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-eb4f2a39-f768-4dd5-86dd-13aa2c369904, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-eb4f2a39-f768-4dd5-86dd-13aa2c369904, name=OS-Ubuntu10.04_x64, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-eb4f2a39-f768-4dd5-86dd-13aa2c369904)}
+Sep 16, 2012 9:38:28 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9fd5277f-eb66-4b57-acb6-958cd89fa298, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9fd5277f-eb66-4b57-acb6-958cd89fa298, name=OS-RHEL5_x64, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=18.0, bootDevice=true, durable=true}, {id=1, type=LOCAL, size=2.0, bootDevice=false, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9fd5277f-eb66-4b57-acb6-958cd89fa298)}
+Sep 16, 2012 9:38:28 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-d940c210-3db7-4428-948a-c41a2b0a42aa, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-d940c210-3db7-4428-948a-c41a2b0a42aa, name=OS-Win2k8R2_Std_x64, processors=[{cores=1.0, speed=1.0}], ram=1024, volumes=[{id=0, type=LOCAL, size=40.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-d940c210-3db7-4428-948a-c41a2b0a42aa)}
+[TestNG] Test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 35698ms
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+smallest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-eb4f2a39-f768-4dd5-86dd-13aa2c369904, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-eb4f2a39-f768-4dd5-86dd-13aa2c369904, name=OS-Ubuntu10.04_x64, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-eb4f2a39-f768-4dd5-86dd-13aa2c369904)}
+fastest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9fd5277f-eb66-4b57-acb6-958cd89fa298, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9fd5277f-eb66-4b57-acb6-958cd89fa298, name=OS-RHEL5_x64, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=18.0, bootDevice=true, durable=true}, {id=1, type=LOCAL, size=2.0, bootDevice=false, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9fd5277f-eb66-4b57-acb6-958cd89fa298)}
+biggest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-d940c210-3db7-4428-948a-c41a2b0a42aa, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-d940c210-3db7-4428-948a-c41a2b0a42aa, name=OS-Win2k8R2_Std_x64, processors=[{cores=1.0, speed=1.0}], ram=1024, volumes=[{id=0, type=LOCAL, size=40.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-d940c210-3db7-4428-948a-c41a2b0a42aa)}
+[TestNG] Test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 36728ms
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 0.
+Starting test testFromTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 5ms
+Test suite progress: tests succeeded: 6, failed: 1, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+location {scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}
+[TestNG] Test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 7, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 8, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 9, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 10, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 11, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanUseImageId(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 1313ms
+Test suite progress: tests succeeded: 13, failed: 1, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+Sep 16, 2012 9:38:30 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}
+[TestNG] Test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 14, failed: 1, skipped: 0.
+Starting test testImageById(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 1687ms
+Test suite progress: tests succeeded: 15, failed: 1, skipped: 0.
+Starting test testImagesCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 16, failed: 1, skipped: 0.
+Starting test testListImages(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 9ms
+Test suite progress: tests succeeded: 17, failed: 1, skipped: 0.
+Starting test testListSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 18, failed: 1, skipped: 0.
+Starting test setServiceDefaults(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 1, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 20, failed: 1, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testTemplateBuilderCanUseImageId(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 27810ms
+Test suite progress: tests succeeded: 21, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 22, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 23, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 26, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 28, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 30, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 32, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 33, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 36, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 37, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 38, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 39, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 43, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 9ms
+Test suite progress: tests succeeded: 45, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 47, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 48, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 49, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 50, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 52, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 54, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 56, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 57, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 60, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 61, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 62, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 63, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 11ms
+Test suite progress: tests succeeded: 64, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 65, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 66, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 67, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 68, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 69, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 70, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 71, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 72, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 73, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 74, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 76, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 77, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 78, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 79, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 80, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 81, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 82, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 83, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 84, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 85, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 87, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 89, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 90, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 91, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 92, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 93, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 94, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 95, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 96, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 97, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 98, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 99, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 100, failed: 1, skipped: 0.
+Starting test testTemplateBuilderWithImageIdSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithImageIdSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 56559ms
+Test suite progress: tests succeeded: 101, failed: 1, skipped: 0.
+Starting test testTemplateBuilderWithLoginUserSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithLoginUserSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 54855ms
+Test suite progress: tests succeeded: 102, failed: 1, skipped: 0.
+Starting test testDefaultTemplateBuilder(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 103, failed: 1, skipped: 0.
+Sep 16, 2012 9:54:07 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << available node(https://zone01.bluelock.com/api/v1.0/vApp/vapp-0637c4a3-7315-494d-9337-dc2d430ab0c4) os({family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}) in 934s
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[TestNG] Test testCaptureVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 989267ms
+Test suite progress: tests succeeded: 104, failed: 1, skipped: 0.
+Starting test testFindVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+[TestNG] Test testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest) failed.
+Test suite progress: tests succeeded: 104, failed: 2, skipped: 0.
+Starting test testGetThumbnailOfVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)
+[TestNG] Test testGetThumbnailOfVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest) succeeded: 4019ms
+Test suite progress: tests succeeded: 105, failed: 2, skipped: 0.
+Starting test testGetVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)
+[TestNG] Test testGetVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest) succeeded: 4130ms
+Test suite progress: tests succeeded: 106, failed: 2, skipped: 0.
+[TestNG] Test testFindVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 72280ms
+Test suite progress: tests succeeded: 107, failed: 2, skipped: 0.
+Starting test testGetOvfEnvelopeForVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+Sep 16, 2012 9:55:56 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << configured node(https://zone01.bluelock.com/api/v1.0/vApp/vapp-0637c4a3-7315-494d-9337-dc2d430ab0c4) with java full version "1.6.0_24-b24" and jetty jetty-8.1.5.v20120716 in 103s
+Sep 16, 2012 9:56:05 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(https://zone01.bluelock.com/api/v1.0/vApp/vapp-0637c4a3-7315-494d-9337-dc2d430ab0c4)[173.240.109.58:8080] [backgroundProcessMilliseconds=3711, socketOpenMilliseconds=5117]
+[TestNG] Test testGetOvfEnvelopeForVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 37468ms
+Test suite progress: tests succeeded: 108, failed: 2, skipped: 0.
+Starting test testGetVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+Sep 16, 2012 9:56:21 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(https://zone01.bluelock.com/api/v1.0/vApp/vapp-0637c4a3-7315-494d-9337-dc2d430ab0c4)[173.240.109.58:8080] [backgroundProcessMilliseconds=3738, socketOpenMilliseconds=5106]
+[TestNG] Test testCreateAndRunAService(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 1097617ms
+Test suite progress: tests succeeded: 109, failed: 2, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 2085ms
+Test suite progress: tests succeeded: 110, failed: 2, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testGetVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 42098ms
+Test suite progress: tests succeeded: 111, failed: 2, skipped: 0.
+<< problem applying options to node(https://zone01.bluelock.com/api/v1.0/vApp/vapp-cba11f57-d05e-49c0-b840-2bd92f485100): 
+org.jclouds.rest.AuthorizationException: (root:pw[5d907853a9617cfd55fb62eae803595b]@173.240.109.14:22) (root:pw[5d907853a9617cfd55fb62eae803595b]@173.240.109.14:22) error acquiring {hostAndPort=173.240.109.14:22, loginUser=root, ssh=null, connectTimeout=60000, sessionTimeout=60000} (not retryable): Exhausted available authentication methods
+	at org.jclouds.sshj.SshjSshClient.propagate(SshjSshClient.java:380)
+	at org.jclouds.sshj.SshjSshClient.acquire(SshjSshClient.java:211)
+	at org.jclouds.sshj.SshjSshClient.connect(SshjSshClient.java:221)
+	at org.jclouds.compute.callables.RunScriptOnNodeUsingSsh.call(RunScriptOnNodeUsingSsh.java:80)
+	at org.jclouds.compute.strategy.RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:69)
+	at org.jclouds.compute.strategy.RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:44)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: net.schmizz.sshj.userauth.UserAuthException: Exhausted available authentication methods
+	at net.schmizz.sshj.userauth.UserAuthImpl.authenticate(UserAuthImpl.java:114)
+	at net.schmizz.sshj.SSHClient.auth(SSHClient.java:205)
+	at net.schmizz.sshj.SSHClient.auth(SSHClient.java:190)
+	at net.schmizz.sshj.SSHClient.authPassword(SSHClient.java:266)
+	at net.schmizz.sshj.SSHClient.authPassword(SSHClient.java:236)
+	at net.schmizz.sshj.SSHClient.authPassword(SSHClient.java:220)
+	at org.jclouds.sshj.SSHClientConnection.create(SSHClientConnection.java:140)
+	at org.jclouds.sshj.SSHClientConnection.create(SSHClientConnection.java:40)
+	at org.jclouds.sshj.SshjSshClient.acquire(SshjSshClient.java:191)
+	... 9 more
+Caused by: net.schmizz.sshj.userauth.UserAuthException: keyboard-interactive auth not allowed by server
+	at net.schmizz.sshj.userauth.UserAuthImpl.authenticate(UserAuthImpl.java:81)
+	... 17 more
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 684289ms
+Test suite progress: tests succeeded: 112, failed: 2, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+Sep 16, 2012 10:18:40 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node https://zone01.bluelock.com/api/v1.0/vApp/vapp-58319416-4b46-4aa1-a8fd-70d9c58246df
+Sep 16, 2012 10:19:07 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node https://zone01.bluelock.com/api/v1.0/vApp/vapp-343adb13-2aa6-42d2-b2f7-4ab0173c96d2
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 705288ms
+Test suite progress: tests succeeded: 113, failed: 2, skipped: 0.
+Starting test testTemplateMatch(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 12891ms
+Test suite progress: tests succeeded: 114, failed: 2, skipped: 0.
+Starting test testCreateTwoNodesWithRunScript(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 715684ms
+Test suite progress: tests succeeded: 115, failed: 2, skipped: 0.
+Starting test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+Sep 16, 2012 10:32:13 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired
+INFO: creating another node based on existing nodes' location: {scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 506242ms
+Test suite progress: tests succeeded: 116, failed: 2, skipped: 0.
+Starting test testCredentialsCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testCredentialsCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 170ms
+Test suite progress: tests succeeded: 117, failed: 2, skipped: 0.
+Starting test testGet(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testGet(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 10792ms
+Test suite progress: tests succeeded: 118, failed: 2, skipped: 0.
+Starting test testReboot(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testReboot(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 42973ms
+Test suite progress: tests succeeded: 119, failed: 2, skipped: 0.
+Starting test testSuspendResume(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testSuspendResume(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 99000ms
+Test suite progress: tests succeeded: 120, failed: 2, skipped: 0.
+Starting test testGetNodesWithDetails(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testGetNodesWithDetails(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 5310ms
+Test suite progress: tests succeeded: 121, failed: 2, skipped: 0.
+Starting test testListNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testListNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 5438ms
+Test suite progress: tests succeeded: 122, failed: 2, skipped: 0.
+Starting test testDestroyNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testDestroyNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 50028ms
+Test suite progress: tests succeeded: 123, failed: 2, skipped: 0.
+Tests run: 125, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3,985.068 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest): expected:<true> but was:<false>
+  testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest): expected:<cat > /root/foo.txt<<EOF(..)
+
+Tests run: 125, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:06:41.178s
+[INFO] Finished at: Sun Sep 16 22:44:17 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project bluelock-vcloud-zone01: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/providers/bluelock-vcloud-zone01/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

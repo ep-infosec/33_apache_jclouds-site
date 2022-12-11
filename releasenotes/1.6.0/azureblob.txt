@@ -1,0 +1,528 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:azureblob:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Azure Storage provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ azureblob ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ azureblob ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ azureblob ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ azureblob ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ azureblob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ azureblob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/azureblob/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ azureblob ---
+[INFO] Compiling 46 source files to /private/tmp/jclouds/providers/azureblob/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ azureblob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/azureblob/src/test/clojure
+[INFO] Copying 5 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ azureblob ---
+[INFO] Compiling 22 source files to /private/tmp/jclouds/providers/azureblob/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ azureblob ---
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/azureblob/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@26544ec1
+Starting test testMetadata(org.jclouds.azureblob.options.CreateContainerOptionsTest)
+Starting test testInvalidNames(org.jclouds.azureblob.predicates.validators.ContainerNameValidatorTest)
+Starting test testNamesValidity(org.jclouds.azureblob.predicates.validators.ContainerNameValidatorTest)
+Starting test testContextImpl(org.jclouds.azureblob.blobstore.config.AzureBlobStoreModuleTest)
+Starting test testMetadataAlreadyPrefixed(org.jclouds.azureblob.options.CreateContainerOptionsTest)
+[pool-1-thread-3] Test testNamesValidity(org.jclouds.azureblob.predicates.validators.ContainerNameValidatorTest) succeeded: 28ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testInvalidNames(org.jclouds.azureblob.predicates.validators.ContainerNameValidatorTest) succeeded: 29ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testMetadataStatic(org.jclouds.azureblob.options.CreateContainerOptionsTest)
+Starting test testPublicAccess(org.jclouds.azureblob.options.CreateContainerOptionsTest)
+[pool-1-thread-2] Test testPublicAccess(org.jclouds.azureblob.options.CreateContainerOptionsTest) succeeded: 13ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testPublicAccessStatic(org.jclouds.azureblob.options.CreateContainerOptionsTest)
+[pool-1-thread-2] Test testPublicAccessStatic(org.jclouds.azureblob.options.CreateContainerOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testDelimiter(org.jclouds.azureblob.options.ListBlobsOptionsTest)
+[pool-1-thread-2] Test testDelimiter(org.jclouds.azureblob.options.ListBlobsOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDelimiterStatic(org.jclouds.azureblob.options.ListBlobsOptionsTest)
+[pool-1-thread-2] Test testDelimiterStatic(org.jclouds.azureblob.options.ListBlobsOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testMetadataAlreadyPrefixed(org.jclouds.azureblob.options.CreateContainerOptionsTest) succeeded: 48ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test test404OnContainerIsContainerNotFound(org.jclouds.azure.storage.handlers.ParseAzureBlobErrorFromXmlContentTest)
+Starting test test404WithoutContainerIsKeyNotFound(org.jclouds.azure.storage.handlers.ParseAzureBlobErrorFromXmlContentTest)
+[pool-1-thread-4] Test testMetadata(org.jclouds.azureblob.options.CreateContainerOptionsTest) succeeded: 52ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testMetadataStatic(org.jclouds.azureblob.options.CreateContainerOptionsTest) succeeded: 24ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-1-thread-2] Test test404OnContainerIsContainerNotFound(org.jclouds.azure.storage.handlers.ParseAzureBlobErrorFromXmlContentTest) succeeded: 346ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[pool-1-thread-5] Test test404WithoutContainerIsKeyNotFound(org.jclouds.azure.storage.handlers.ParseAzureBlobErrorFromXmlContentTest) succeeded: 345ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testContextImpl(org.jclouds.azureblob.blobstore.config.AzureBlobStoreModuleTest) succeeded: 956ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testCreateRootContainerOptions(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testCreateRootContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testContainerProperties(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testCreateContainerOptions(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testCreateContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+[pool-4-thread-1] Test testContainerProperties(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 35ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testDeleteContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+[pool-4-thread-2] Test testCreateContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 37ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testCreateRootContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 38ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testCreateContainerOptions(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 38ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testCreateRootContainerOptions(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 38ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testDeleteRootContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testGetBlob(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testGetPublicAccessForContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testListBlobs(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+[pool-4-thread-2] Test testDeleteRootContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testListContainers(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+[pool-4-thread-3] Test testGetPublicAccessForContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testDeleteContainer(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testListContainersOptions(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testListRootBlobs(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+[pool-4-thread-5] Test testListBlobs(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 31ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testListContainers(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 26ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testListContainersOptions(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 23ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testSetBlobMetadata(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+Starting test testSetResourceMetadata(org.jclouds.azureblob.AzureBlobAsyncClientTest)
+[pool-4-thread-1] Test testListRootBlobs(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 23ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testGetBlob(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 32ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testSetResourceMetadata(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 12ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testSetBlobMetadata(org.jclouds.azureblob.AzureBlobAsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.azureblob.AzureBlobProviderTest)
+Starting test testAllContains(org.jclouds.azureblob.AzureBlobProviderTest)
+Starting test testOfApiContains(org.jclouds.azureblob.AzureBlobProviderTest)
+Starting test testWithId(org.jclouds.azureblob.AzureBlobProviderTest)
+[pool-5-thread-1] Test testAllContains(org.jclouds.azureblob.AzureBlobProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+[pool-5-thread-4] Test testWithId(org.jclouds.azureblob.AzureBlobProviderTest) succeeded: 3ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testOfApiContains(org.jclouds.azureblob.AzureBlobProviderTest) succeeded: 3ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testTransformableToContains(org.jclouds.azureblob.AzureBlobProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testExtendedPropertiesBind(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+Starting test testNoNameIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+Starting test testNoContentLengthIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+Starting test testMustBeAzureBlob(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+Starting test testNullIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+[pool-6-thread-2] Test testMustBeAzureBlob(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 6ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-6-thread-5] Test testNullIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 6ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testNoContentLengthIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 6ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testOver64MBIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+Starting test testPassWithMinimumDetailsAndPayload64MB(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest)
+[pool-6-thread-4] Test testNoNameIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 9ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testOver64MBIsBad(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 3ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testExtendedPropertiesBind(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 12ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+[pool-6-thread-5] Test testPassWithMinimumDetailsAndPayload64MB(org.jclouds.azureblob.binders.BindAzureBlobMetadataToRequestTest) succeeded: 4ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testSignRemoveBlob(org.jclouds.azureblob.blobstore.AzureBlobRequestSignerTest)
+Starting test testSignPutBlob(org.jclouds.azureblob.blobstore.AzureBlobRequestSignerTest)
+Starting test testSignGetBlob(org.jclouds.azureblob.blobstore.AzureBlobRequestSignerTest)
+[pool-7-thread-1] Test testSignGetBlob(org.jclouds.azureblob.blobstore.AzureBlobRequestSignerTest) succeeded: 119ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-7-thread-3] Test testSignRemoveBlob(org.jclouds.azureblob.blobstore.AzureBlobRequestSignerTest) succeeded: 119ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+[pool-7-thread-2] Test testSignPutBlob(org.jclouds.azureblob.blobstore.AzureBlobRequestSignerTest) succeeded: 119ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.azureblob.xml.AccountNameEnumerationResultsHandlerTest)
+Starting test testApplyInputStreamWithOptions(org.jclouds.azureblob.xml.AccountNameEnumerationResultsHandlerTest)
+[pool-8-thread-2] Test testApplyInputStreamWithOptions(org.jclouds.azureblob.xml.AccountNameEnumerationResultsHandlerTest) succeeded: 10ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-8-thread-1] Test testApplyInputStream(org.jclouds.azureblob.xml.AccountNameEnumerationResultsHandlerTest) succeeded: 10ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.azureblob.xml.ContainerNameEnumerationResultsHandlerTest)
+Starting test testOptions(org.jclouds.azureblob.xml.ContainerNameEnumerationResultsHandlerTest)
+[pool-9-thread-2] Test testOptions(org.jclouds.azureblob.xml.ContainerNameEnumerationResultsHandlerTest) succeeded: 5ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+[pool-9-thread-1] Test testApplyInputStream(org.jclouds.azureblob.xml.ContainerNameEnumerationResultsHandlerTest) succeeded: 7ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.219 sec
+
+Results :
+
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ azureblob ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ azureblob ---
+[INFO] Building jar: /private/tmp/jclouds/providers/azureblob/target/azureblob-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ azureblob ---
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/azureblob/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@39d85f79
+Starting test testCreateContainer(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testCreateContainer(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 1375ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCreatePublicContainer(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testCreatePublicContainer(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 423ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCreatePublicRootContainer(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testCreatePublicRootContainer(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 1095ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListContainers(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testListContainers(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 518ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListContainersWithOptions(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testListContainersWithOptions(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 344ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDeleteOneContainer(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testDeleteOneContainer(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 314ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testCreateBlobWithExpiry(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testCreateBlobWithExpiry(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) skipped.
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 1.
+Starting test testGetIfMatch(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testGetIfMatch(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 1.
+Starting test testPutObjectStream(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testPutObjectStream(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 823ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 1.
+Starting test blobNotFound(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test blobNotFound(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1271ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1794ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1782ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1951ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1840ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1931ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1834ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1735ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1732ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1855ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1815ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 1.
+Starting test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 1813ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 1.
+Starting test deleteObjectNoContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObjectNoContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 345ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 1.
+Starting test deleteObjectNotFound(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test deleteObjectNotFound(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 987ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 1.
+Starting test testBigFileGets(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testBigFileGets(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 34354ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 1.
+Starting test testGetIfModifiedSince(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testGetIfModifiedSince(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 5244ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 1.
+Starting test testGetIfNoneMatch(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testGetIfNoneMatch(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 3761ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 1.
+Starting test testGetIfUnmodifiedSince(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testGetIfUnmodifiedSince(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 3520ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 1.
+Starting test testGetRange(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testGetRange(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 2880ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 1.
+Starting test testGetTwoRanges(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testGetTwoRanges(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 3426ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 1.
+Starting test testMetadata(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testMetadata(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 3317ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 1.
+Starting test testPutFileParallel(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testPutFileParallel(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 15528ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 1.
+Starting test testPutObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 2375ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 1.
+Starting test testPutObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 2214ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 1.
+Starting test testPutObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.azureblob.blobstore.integration.AzureBlobIntegrationLiveTest) succeeded: 2737ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 1.
+Starting test testCopyUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobLiveTest)
+[TestNG] Test testCopyUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobLiveTest) succeeded: 5314ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 1.
+Starting test testContains(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testContains(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 3060ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 1.
+Starting test testEntrySet(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 11800ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 1.
+Starting test testPut(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 4402ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 1.
+Starting test testPutAll(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 4145ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 1.
+Starting test testPutMoreThanSingleListing(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 10307ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 1.
+Starting test testRemove(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testRemove(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 3736ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 1.
+Starting test testValues(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testValues(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 3417ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 1.
+Starting test testClear(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testClear(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 4001ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 1.
+Starting test testContainsKey(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 2805ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 1.
+Starting test testDirectory(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 39982ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 1.
+Starting test testIsEmpty(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 4480ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 1.
+Starting test testKeySet(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 4984ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 1.
+Starting test testListContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobMapIntegrationLiveTest) succeeded: 2337ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 1.
+Starting test testSignGetUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest)
+[TestNG] Test testSignGetUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest) succeeded: 4419ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 1.
+Starting test testSignGetUrlOptions(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest)
+[TestNG] Test testSignGetUrlOptions(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest) succeeded: 2239ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 1.
+Starting test testSignGetUrlWithTime(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest)
+[TestNG] Test testSignGetUrlWithTime(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 2.
+Starting test testSignPutUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest)
+[TestNG] Test testSignPutUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest) succeeded: 2210ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 2.
+Starting test testSignPutUrlWithTime(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest)
+[TestNG] Test testSignPutUrlWithTime(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 3.
+Starting test testSignRemoveUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest)
+[TestNG] Test testSignRemoveUrl(org.jclouds.azureblob.blobstore.integration.AzureBlobSignerLiveTest) succeeded: 2867ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 3.
+Starting test containerDoesntExist(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 682ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 3.
+Starting test containerExists(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test containerExists(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 6298ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 3.
+Starting test deleteContainerIfEmpty(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test deleteContainerIfEmpty(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 3142ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 3.
+Starting test deleteContainerWithContents(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test deleteContainerWithContents(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 3527ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 3.
+Starting test testClearWhenContentsUnderPath(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testClearWhenContentsUnderPath(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 6865ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 3.
+Starting test testDirectory(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 22941ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 3.
+Starting test testListContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 9599ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 3.
+Starting test testListContainerMarker(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testListContainerMarker(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 13815ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 3.
+Starting test testListContainerMaxResults(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testListContainerMaxResults(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 13630ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 3.
+Starting test testListContainerPrefix(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testListContainerPrefix(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 11781ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 3.
+Starting test testListRootUsesDelimiter(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testListRootUsesDelimiter(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 11497ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 3.
+Starting test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 2456ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 3.
+Starting test testWithDetails(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest)
+[TestNG] Test testWithDetails(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerIntegrationLiveTest) succeeded: 2655ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 3.
+Starting test testPublicAccess(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerLiveTest)
+[TestNG] Test testPublicAccess(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerLiveTest) succeeded: 4592ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 3.
+Starting test containerDoesntExist(org.jclouds.azureblob.blobstore.integration.AzureBlobServiceIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.azureblob.blobstore.integration.AzureBlobServiceIntegrationLiveTest) succeeded: 610ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 3.
+Starting test testAllLocations(org.jclouds.azureblob.blobstore.integration.AzureBlobServiceIntegrationLiveTest)
+[TestNG] Test testAllLocations(org.jclouds.azureblob.blobstore.integration.AzureBlobServiceIntegrationLiveTest) succeeded: 3857ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 3.
+Starting test testGetAssignableLocations(org.jclouds.azureblob.blobstore.integration.AzureBlobServiceIntegrationLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.azureblob.blobstore.integration.AzureBlobServiceIntegrationLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 3.
+Starting test testPutAll(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 5095ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 3.
+Starting test testDirectory(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 31276ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 3.
+Starting test testPutFile(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutFile(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 5874ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 3.
+Starting test testPutString(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutString(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 4903ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 3.
+Starting test testContainsKey(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 2800ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 3.
+Starting test testIsEmpty(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 2724ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 3.
+Starting test testRemove(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testRemove(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 5496ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 3.
+Starting test testContainsStringValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsStringValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 7453ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 3.
+Starting test testClear(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testClear(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 4083ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 3.
+Starting test testListContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 1467ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 3.
+Starting test testPutAllStrings(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAllStrings(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 4871ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 3.
+Starting test testValues(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testValues(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 2610ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 3.
+Starting test testPutBytes(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutBytes(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 5761ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 3.
+Starting test testPutAllBytes(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAllBytes(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 3544ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 3.
+Starting test testPutAllFiles(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutAllFiles(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 3289ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 3.
+Starting test testContainsFileValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsFileValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 2311ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 3.
+Starting test testEntrySet(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 13397ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 3.
+Starting test testPutMoreThanSingleListing(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 11292ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 3.
+Starting test testKeySet(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 3443ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 3.
+Starting test testContainsBytesValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsBytesValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 3317ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 3.
+Starting test testPut(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 5536ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 3.
+Starting test testContainsInputStreamValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsInputStreamValue(org.jclouds.azureblob.blobstore.integration.AzureBlobInputStreamMapIntegrationLiveTest) succeeded: 2999ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 3.
+Starting test testDeleteRootContainer(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testDeleteRootContainer(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 481ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 3.
+Starting test testListOwnedContainers(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testListOwnedContainers(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 1428ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 3.
+Starting test testObjectOperations(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testObjectOperations(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 4610ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 3.
+Starting test testPublicAccessInNonDefaultLocation(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerLiveTest)
+[TestNG] Test testPublicAccessInNonDefaultLocation(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 4.
+Starting test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerLiveTest)
+[TestNG] Test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.azureblob.blobstore.integration.AzureBlobContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 5.
+Starting test testDeleteContainer(org.jclouds.azureblob.AzureBlobClientLiveTest)
+[TestNG] Test testDeleteContainer(org.jclouds.azureblob.AzureBlobClientLiveTest) succeeded: 813ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 5.
+Tests run: 99, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 525.215 sec
+
+Results :
+
+Tests run: 99, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ azureblob ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ azureblob ---
+[INFO] Installing /private/tmp/jclouds/providers/azureblob/target/azureblob-1.6.0-SNAPSHOT.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/azureblob/1.6.0-SNAPSHOT/azureblob-1.6.0-SNAPSHOT.jar
+[INFO] Installing /private/tmp/jclouds/providers/azureblob/pom.xml to /Users/adrianc/.m2/repository/org/jclouds/provider/azureblob/1.6.0-SNAPSHOT/azureblob-1.6.0-SNAPSHOT.pom
+[INFO] Installing /private/tmp/jclouds/providers/azureblob/target/azureblob-1.6.0-SNAPSHOT-tests.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/azureblob/1.6.0-SNAPSHOT/azureblob-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ azureblob ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8:55.112s
+[INFO] Finished at: Sat Apr 27 14:03:34 PDT 2013
+[INFO] Final Memory: 16M/125M
+[INFO] ------------------------------------------------------------------------
